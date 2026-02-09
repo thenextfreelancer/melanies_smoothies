@@ -38,4 +38,4 @@ try:
             session.sql(my_insert_stmt).collect()
             st.success('Your Smoothie is ordered!', icon="✅")
 except Exception as error:
-    print("An error occurred:", error)
+    st.write("An error occurred:", error)
